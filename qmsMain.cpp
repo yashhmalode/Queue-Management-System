@@ -3,8 +3,6 @@
 #include <ctime>
 using namespace std;
 
-
-//from queueInitialize.cpp
 class Node{
     public:
     int data;
@@ -133,14 +131,13 @@ int addCustomer(int choice){
 
     string branchLoc = "111111";
 
-    //Token number will be a unique 
-    //temporary reference for the customer
+   
 
     c.tokenNum = stoi(strChoice + strTime);
 
     return c.tokenNum;
 }
-//addCustomer.cpp ends
+
 
 int main(){
 
@@ -233,23 +230,7 @@ int main(){
             
             case 2:
             {
-                // cout << "Account creation 1: ";
-                // accCreate1.qDisplay();
-
-                // cout << "Account creation 2: ";
-                // accCreate2.qDisplay();
-
-                // cout << "Passbook entry: ";
-                // passEntry.qDisplay();
-
-                // cout << "Loan enquiry: ";
-                // loanEnq.qDisplay();
-
-                // cout << "Foreign exchange: ";
-                // forEx.qDisplay();
-
-                // cout << "Other queries: ";
-                // otherQuery.qDisplay();
+                
 
                 for (int i = 1; i <= (sizeof(qArr) / sizeof(qArr[0])); i++){
                     cout << "Counter " << i << ": ";
